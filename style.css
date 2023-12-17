@@ -11,15 +11,15 @@ html, body {
 body {
     margin: 0;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #f0f0f0;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; 
 }
 
 h1 {
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .bingo-board {
@@ -27,19 +27,20 @@ h1 {
     grid-template-columns: repeat(5, 150px);
     grid-template-rows: repeat(5, 150px);
     gap: 5px;
-    margin-top: 20px; /* Space between the header and the board */
+    margin-top: 20px;
 }
 
 .bingo-cell {
     display: flex;
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    justify-content: center;
     position: relative;
     border: 1px solid #000;
     background-color: #fff;
-    flex-direction: column; /* Stacks content vertically */
-    text-align: center; /* Centers text horizontally for multi-line text */
-    padding: 10px; /* Adds padding inside the cell */
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+font-size: 19px;
 }
 
 .cross {
