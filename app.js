@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function createBingoBoard(board) {
-    const items = ['Nice dono bait and switch', '"I wanna end stream"', 'I would beat (insert thing) in a fight guys', 'KOSS GIGACHAD spam', 'Plays games all night instead of sleeping', '"I have a lore degree"', 'Purposely words a story in a bad way to farm', 'Retells old story', '"I will be online tomorrow guys"', 'Mum doesnt say "love you" back', '"Im not reading that" fat laugh', 'Gaybaiting', 'IM SO LUCKY/ UNLUCKY', 'Ex again', '"I swear on my mums life"', 'Accidentally calls Bluey Blowey', 'Shit talks ela (Jealousy)', 'Depressed voice', '"I have anxiety"', 'Whines about mods not playing mediashare', 'Fat screaming', 'Gem hating in chat', 'Reddit joke', '"Dont clip that"'];
+    const items = ['Nice dono bait and switch', '"I wanna end stream"', 'I would beat (insert thing) in a fight guys', 'KOSS GIGACHAD spam', 'Plays games all night instead of sleeping', '"I have a lore degree"', 'Purposely words a story in a bad way to farm', 'Retells old story', '"I will be online tomorrow guys"', 'Mum doesnt say "love you" back', '"Im not reading that" fat laugh', 'Gaybaiting', 'IM SO LUCKY/ UNLUCKY', 'Ex again', '"I swear on my mums life"', 'Accidentally calls Bluey Blowey', 'Shit talks ela (Jealousy)', 'Depressed voice', '"I have anxiety"', 'Whines about mods not playing mediashare', 'Fat screaming', 'Gem hating in chat', 'Reddit joke', '"Dont clip that"', 'slams desk', '"I will practice this run"', '"I will be online tomorrow"', '"my controller fell"'];
     let counter = 0;
     const today = new Date().toISOString().slice(0, 10);
     Math.seedrandom(today);
