@@ -1,5 +1,5 @@
 html, body {
-	font-family: 'Helvetica', Arial, sans-serif; 
+    font-family: 'Helvetica', Arial, sans-serif; 
     height: 100%;
     margin: 0;
     display: flex;
@@ -16,10 +16,6 @@ body {
     justify-content: center;
     background-color: #f0f0f0;
     min-height: 100vh; 
-}
-
-h1 {
-    margin-top: 20px;
 }
 
 .bingo-board {
@@ -77,3 +73,30 @@ font-size: 19px;
 .free-space {
     background-color: #90ee90;
 }
+
+.special-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#randomizeButton {
+        top: 330px;
+        right: 10px;
+        background-color: yellow;
+        position: absolute;
+        border-style: solid;
+        padding: 10px;
+        font-size: 24px;
+        border: 2px solid black !important;
+    }
+    
+#dailySeedButton {
+        top: 420px;
+        right: 10px;
+        background-color: lightgray;
+        position: absolute;
+        border-style: solid;
+        padding: 10px;
+        font-size: 24px;
+        border: 2px solid black !important;
+    }
