@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const board = document.getElementById('bingoBoard');
-    const items = ['Nice dono bait and switch', '"I wanna end stream"', 'I would beat (insert thing) in a fight guys', 'KOSS GIGACHAD spam', 'Plays games all night instead of sleeping', '"I have a lore degree"', 'Purposely words a story in a bad way to farm', 'Retells old story', '"I will be online tomorrow guys"', 'Mum doesnt say "love you" back', '"Im not reading that" fat laugh', 'Gaybaiting', 'IM SO LUCKY/ UNLUCKY', 'Ex again', '"I swear on my mums life"', 'Accidentally calls Bluey Blowey', 'Shit talks ela (Jealousy)', 'Depressed voice', '"I have anxiety"', 'Whines about mods not playing mediashare', 'Fat screaming', 'Gem hating in chat', 'Reddit joke', '"Dont clip that"', 'slams desk', '"I will practice this run"', '"I will be online tomorrow"', '"my controller fell"'];
+    const items = ['Nice dono bait and switch', '"I wanna end stream"', 
+                   'I would beat (insert thing) in a fight', 
+                   'KOSS GIGACHAD spam', 'Plays games all night instead of sleeping', 
+                   '"I have a lore degree"', 'Purposely words a story in a bad way to farm', 
+                   'Retells old story', '"I will be online tomorrow guys"', 
+                   'Mum doesnt say "love you" back', '"Im not reading that" fat laugh', 
+                   'Gaybaiting', 'IM SO LUCKY / UNLUCKY', 'Ex again', '"I swear on my mums life"', 
+                   'Accidentally calls Bluey Blowey', 'Shit talks ela (Jealousy)', 'Depressed voice', 
+                   '"I have anxiety"', 'Whines about mods not playing mediashare', 'Fat screaming', 
+                   'Gem hating in chat', 'Reddit joke', '"Dont clip that"', 'slams desk', 
+                   '"I will practice this run"', '"I will be online tomorrow"', 
+                   '"my controller fell"', 'animal noises (oink, bark, meow etc)', 'cringe / waytoodank media share',
+                   '"All achievements run soon"', 'blowey is scolded by nemz'];
     randomizeBoard(board, [...items]); // Default to random seed
 
     document.getElementById('randomizeButton').addEventListener('click', () => {
@@ -22,7 +34,7 @@ function createBingoBoard(board, items) {
             cell.classList.add('bingo-cell');
             cell.innerHTML = `<span class="cross"></span>${items[counter++]}`;
             if (i === 2 && j === 2) {
-                cell.innerHTML = `<span class="cross"></span><span class="special-text">DIESOFCRINGE (FREE)</span>`;
+                cell.innerHTML = `<span class="cross"></span><span class="special-text">DIESOFCRINGE SPAM </br>(FREE)</span>`;
                 cell.classList.add('free-space');
             }
             cell.addEventListener('click', function() {
