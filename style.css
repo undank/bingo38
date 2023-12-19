@@ -105,8 +105,8 @@ body {
 
 @media screen and (max-width: 1200px) {
     .bingo-board {
-        grid-template-columns: repeat(5, 100px);
-        grid-template-rows: repeat(5, 100px);
+        grid-template-columns: repeat(5, 90px);
+        grid-template-rows: repeat(5, 90px);
         gap: 5px;
     }
 
@@ -124,7 +124,7 @@ body {
     }
 
     .bingo-cell {
-        font-size: 13px; /* Larger font for easier reading on mobile */
+        font-size: 11px; /* Larger font for easier reading on mobile */
     }
 
     #randomizeButton, #dailySeedButton {
