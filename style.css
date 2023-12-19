@@ -100,7 +100,7 @@ body {
         border: 2px solid black !important;
     }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
     .bingo-board {
         grid-template-columns: repeat(5, 100px);
         grid-template-rows: repeat(5, 100px);
