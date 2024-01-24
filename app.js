@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Shit talks Ela (Jealousy)', 
                    'Depressed voice', 
                    '"I have anxiety"', 
-                   'Mods scam mediashare (racist, dmca, lazy)', 
+                   'Mods scam mediashare (racist, dmca)', 
                    'Fat screaming', 
                    'Reddit joke', 
                    '"Dont clip that"', 
@@ -34,10 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Parents hear something and are traumatised', 
                    'Parents shout at Nemz to keep quiet', 
                    'Gem says something based in chat', 
-                   '"Ashley is not a girls name"', 
+                   'Ashley is a manly name in the UK"', 
                    'Less than 10 likes on tweet',
                    'Insane freakout but keeps streaming', 
                    'mentions Hitler unprompted',
+                   'voice crack',
+                   '"dont talk about tottenham" (lost again)', 
                    'Gets a run past Pontiff (rare)'];
     randomizeBoard(board, [...items]); // Default to random seed
 
