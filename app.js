@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Gaybaiting', 'IM SO LUCKY / UNLUCKY', 'Ex again', '"I swear on my mums life"', 
                    'Accidentally calls Bluey Blowey', 'Shit talks Ela (Jealousy)', 'Depressed voice', 
                    '"I have anxiety"', 'Whines about mods not playing mediashare', 'Fat screaming', 
-                   'Gem hating in chat', 'Reddit joke', '"Dont clip that"', 'Slams desk', 
-                   '"I will practice this run"', '"I will be online tomorrow"', 
-                   '"My controller fell"', 'Animal noises (oink, bark, meow etc)', 'Cringe / WAYTOODANK media share',
-                   '"All achievements run soon"', 'Blowey is told off by nemz', 'Gem says something based in chat'];
+                   'Reddit joke', '"Dont clip that"', 'Slams desk', '"I dont have shit hair"', 
+                   'someone raids and does the "better streamer" bit','"I will practice this run"', 
+                   '"My controller fell"', 'Animal noises (oink, bark, meow etc)', 
+                   'Cringe / WAYTOODANK media share', '"All achievements run soon"', 
+                   'Blowey is told off by nemz', 'Gem says something based in chat', 
+                   'guys do you really think (something retarded)', '"Ashley is not a girls name'];
     randomizeBoard(board, [...items]); // Default to random seed
 
     document.getElementById('randomizeButton').addEventListener('click', () => {
