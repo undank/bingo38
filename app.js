@@ -31,11 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Cringe / WAYTOODANK media share', 
                    '"All achievements run soon"', 
                    'Blowey is told off by nemz', 
-                   'Door is left open, parents traumatised', 
+                   'Parents hear something and are traumatised', 
+                   'Parents shout at Nemz to keep quiet', 
                    'Gem says something based in chat', 
                    '"Ashley is not a girls name"', 
                    'Less than 10 likes on tweet',
-                   'nemz has insane freakout and keeps streaming', 
+                   'Insane freakout but keeps streaming', 
                    'mentions Hitler unprompted',
                    'Gets a run past Pontiff (rare)'];
     randomizeBoard(board, [...items]); // Default to random seed
