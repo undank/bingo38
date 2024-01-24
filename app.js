@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
                    '"My controller fell"', 'Animal noises (oink, bark, meow etc)', 
                    'Cringe / WAYTOODANK media share', '"All achievements run soon"', 
                    'Blowey is told off by nemz', 'Gem says something based in chat', 
-                   '"Ashley is not a girls name', 'Less than 10 likes on tweet'];
+                   '"Ashley is not a girls name', 'Less than 10 likes on tweet',
+                   'nemz has insane freakout and keeps streaming', 'Gets a run past Pontiff (rare)'];
     randomizeBoard(board, [...items]); // Default to random seed
 
     document.getElementById('randomizeButton').addEventListener('click', () => {
