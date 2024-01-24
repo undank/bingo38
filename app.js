@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Insane freakout but keeps streaming', 
                    'mentions Hitler unprompted',
                    'voice crack',
-                   '"dont talk about tottenham" (they lost again)', 
+                   '"dont talk about tottenham" (lost once again)', 
                    'Gets a run past Pontiff (rare)'];
     randomizeBoard(board, [...items]); // Default to random seed
 
