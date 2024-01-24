@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Insane freakout but keeps streaming', 
                    'mentions Hitler unprompted',
                    'voice crack',
+                   '"Minecraft villager HUHHH"',
+                   '"Foosball table"',
+                   '"I was bulking"',
+                   '"My book will be done this year"',
+                   'nemz moaning',
                    '"dont talk about tottenham" (lost once again)', 
                    'Gets a run past Pontiff (rare)'];
     randomizeBoard(board, [...items]); // Default to random seed
