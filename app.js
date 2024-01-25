@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Shit talks Ela (Jealousy)', 
                    'Depressed voice', 
                    '"I have anxiety"', 
-                   'Mods scam mediashare (racist, dmca)', 
+                   'Mods scam mediashare (tos, dmca)', 
                    'Fat screaming', 
                    'Reddit joke', 
                    '"Dont clip that"', 
