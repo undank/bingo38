@@ -1,51 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const board = document.getElementById('bingoBoard');
-    const items = ['Nice dono bait and switch', 
-                   '"I wanna end stream"', 
-                   'I would beat (insert thing) in a fight', 
-                   'KOSS GIGACHAD spam', 
-                   'Plays games all night instead of sleeping', 
-                   '"I have a lore degree"', 
-                   'Purposely words a story in a bad way to farm', 
-                   'Retells old story', 
-                   '"I will be online tomorrow guys"', 
-                   'Mum doesnt say "love you" back', 
-                   '"Im not reading that" fat laugh', 
-                   'Gaybaiting', 
-                   'IM SO LUCKY / UNLUCKY', 
-                   'Ex again', 
-                   '"I swear on my mums life"', 
-                   'Accidentally calls Bluey Blowey', 
-                   'Shit talks Ela (Jealousy)', 
-                   'Depressed voice', 
-                   '"I have anxiety"', 
-                   'Mods scam mediashare (tos, dmca)', 
-                   'Fat screaming', 
-                   'Reddit joke', 
-                   '"Dont clip that"', 
-                   'Slams desk', 
-                   '"I dont have shit hair"', 
-                   '"I will practice this run"', 
-                   '"My controller fell"', 
-                   'Animal noises (oink, bark, meow etc)', 
-                   'Cringe / WAYTOODANK media share', 
-                   '"All achievements run soon"', 
-                   'Blowey is told off by nemz', 
-                   'Parents hear something and are traumatised', 
-                   'Parents shout at nemz to keep quiet', 
-                   'Gem says something based in chat', 
-                   '"Ashley is a manly name in the UK"', 
-                   'Less than 10 likes on go-live tweet',
-                   'Insane freakout but keeps streaming', 
-                   'mentions Hitler unprompted',
-                   'voice crack',
-                   '"Minecraft villager HUHHH"',
-                   '"Foosball table"',
-                   '"I was bulking"',
-                   '"My book will be done this year"',
-                   'nemz moaning',
-                   '"dont talk about tottenham" (lost once again)', 
-                   'Gets a run past Pontiff (rare)'];
+    let items = [];
+
+    fetch('list.txt') // import items from list.txt
+        .then(response => response.text())
+        .then(text => {
+            items = text.split('\n');
+            randomizeBoard(board, [...items]);
+        })
+        .catch(err => console.error('Error fetching the list:', err));
+    
     randomizeBoard(board, [...items]); // Default to random seed
 
     document.getElementById('randomizeButton').addEventListener('click', () => {
