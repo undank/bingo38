@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                    'Parents shout at nemz to keep quiet', 
                    'Gem says something based in chat', 
                    '"Ashley is a manly name in the UK"', 
-                   'Less than 10 likes on tweet',
+                   'Less than 10 likes on go-live tweet',
                    'Insane freakout but keeps streaming', 
                    'mentions Hitler unprompted',
                    'voice crack',
