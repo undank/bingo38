@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const board = document.getElementById('bingoBoard');
     let items = [];
 
-    fetch('list.txt') // import items from list.txt
+    fetch('list.txt')
         .then(response => response.text())
         .then(text => {
-            items = text.split('\n');
+            // Split file into an array, each line as an item, and filter out empty lines
+            items = text.split('\n').filter(item => item.trim() !== '');
             randomizeBoard(board, [...items]);
         })
         .catch(err => console.error('Error fetching the list:', err));
