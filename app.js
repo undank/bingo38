@@ -7,18 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(text => {
             // Split file into an array, each line as an item, and filter out empty lines
             items = text.split('\n').filter(item => item.trim() !== '');
-            randomizeBoard(board, [...items]);
+            randomizeBoard(board, [...items]); // Initialize the board here after items are loaded
         })
-        .catch(err => console.error('Error fetching the list:', err));
-    
-    randomizeBoard(board, [...items]); // Default to random seed
+        .catch(err => {
+            console.error('Error fetching the list:', err);
+            // Handle the error appropriately, maybe display a message to the user
+        });
 
     document.getElementById('randomizeButton').addEventListener('click', () => {
-        randomizeBoard(board, [...items]);
+        if (items.length > 0) {
+            randomizeBoard(board, [...items]);
+        }
     });
 
     document.getElementById('dailySeedButton').addEventListener('click', () => {
-        resetWithDailySeed(board, [...items]);
+        if (items.length > 0) {
+            resetWithDailySeed(board, [...items]);
+        }
     });
 });
 
