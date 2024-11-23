@@ -37,7 +37,7 @@ function createBingoBoard(board, items) {
             cell.classList.add('bingo-cell');
             cell.innerHTML = `<span class="cross"></span>${items[counter++]}`;
             if (i === 2 && j === 2) {
-                cell.innerHTML = `<span class="cross"></span><span class="special-text">DIESOFCRINGE SPAM </br>(FREE)</span>`;
+                cell.innerHTML = `<span class="cross"></span><span class="special-text">DIESOFCRINGE</br>(FREE)</span>`;
                 cell.classList.add('free-space');
             }
             cell.addEventListener('click', function() {
